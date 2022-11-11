@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-dgpw1_7d%r2roc$gx(s-)br$*ao&$5$4y2-3&&r-az2+b@=-2h'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG =  False #True
+DEBUG = True
 
-ALLOWED_HOSTS = ["*" , "https://akdjango.azurewebsites.net"]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -118,8 +118,8 @@ USE_TZ = True
 
 
 STATIC_URL = 'static/'
-STATICFILES_STORAGE = 'whitenoise.storage.CompressManifestStaticFilesStorage'
-STATIC_ROOT = BASE_DIR/'staticfiles'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressManifestStaticFilesStorage'
+# STATIC_ROOT = BASE_DIR/'static'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
